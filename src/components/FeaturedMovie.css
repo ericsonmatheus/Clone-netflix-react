@@ -1,0 +1,97 @@
+.featuredMovie {
+    height: 100vh;
+}
+.featuredMovie--vertical {
+    height: inherit;
+    width: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+.featuredMovie--horizontal {
+    height: inherit;
+    width: inherit;
+    background: linear-gradient( to right, #111 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 125px;
+}
+.featuredMovie--name {
+    font-size: 60px;
+    font-weight: bold;
+}
+.featuredMovie--info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.featuredMovie--point,
+.featuredMovie--year,
+.featuredMovie--seasons {
+    display: inline-block;
+    margin-right: 15px;
+}
+.featuredMovie--point {
+    color: #46d369;
+}
+.featuredMovie--description {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+}
+.featuredMovie--buttons {
+    margin-top: 15px;
+}
+.featuredMovie--play,
+.featuredMovie--addMovie {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 15px;
+    text-decoration: none;
+    opacity: 1;
+    background-color: #FFF;
+    border-radius: 5px;
+    transition: all ease 0.5s;
+    color: #000;
+}
+.featuredMovie--play:hover,
+.featuredMovie--addMovie:hover {
+    opacity: 0.5;
+}
+.featuredMovie--addMovie {
+    color: #FFF;
+    background-color: #333333;
+}
+.featuredMovie--genres {
+    margin-top: 15px;
+    color: #999;
+}
+
+@media (max-width: 760px) {
+    .featuredMovie {
+        height: 90vh;
+    }
+    .featuredMovie--name {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .featuredMovie--info {
+        font-size: 16px;
+    }
+    .featuredMovie--description {
+        font-size: 14px;
+        max-width: 80%;
+        margin-right: 30px;
+    }
+    .featuredMovie--play,
+    .featuredMovie--addMovie {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .featuredMovie--genres {
+        font-size: 14px;
+    }
+}
